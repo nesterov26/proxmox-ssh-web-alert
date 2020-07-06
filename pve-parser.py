@@ -22,4 +22,4 @@ with open(filename, 'r') as f:
                 ip_log = dt_log.split()[0]
                 ip_log = re.search("\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", ip_log)
                 user_log = dt_log.split()[2]
-                process = subprocess.Popen(['/bin/bash', '/opt/ssh-login-alert-telegram/alert.sh', ip_log.group(0), user_log], stdout=subprocess.PIPE)
+                process = subprocess.Popen(['/bin/bash', '/opt/proxmox_scripts/ssh-web-alert/alert.sh', ip_log.group(0), user_log], stdout=subprocess.PIPE)
