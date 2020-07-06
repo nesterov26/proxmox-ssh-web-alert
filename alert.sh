@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Import credentials form config file
-. /opt/ssh-login-alert-telegram/credentials.config
+. /opt/proxmox_scripts/ssh-web-alert/credentials/credentials.config
 for i in "${USERID[@]}"
 do
 URL="https://api.telegram.org/bot${KEY}/sendMessage"
