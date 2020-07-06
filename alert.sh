@@ -15,7 +15,7 @@ if [ -n "$SSH_CLIENT" ]; then
 
         IPINFO="https://ipinfo.io/${CLIENT_IP}"
 
-        TEXT="*SSH Connection* from *${CLIENT_IP}* as *${USER}* on *${SRV_HOSTNAME}* (*${SRV_IP}*)
+        TEXT="*SSH-Connection* from *${CLIENT_IP}* as *${USER}* on *${SRV_HOSTNAME}* (*${SRV_IP}*)
 Date: ${DATE}
 More informations: [${IPINFO}](${IPINFO})"
 
