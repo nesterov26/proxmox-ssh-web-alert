@@ -16,7 +16,7 @@ bash $ALERTSCRIPT_PATH
 EOF
 }
 
-ALERTSCRIPT_PATH="/opt/ssh-login-alert-telegram/alert.sh"
+ALERTSCRIPT_PATH="/opt/proxmox_scripts/ssh-web-alert/alert.sh"
 
 echo "Deploying alerts..."
 add_profiled
